@@ -1,0 +1,273 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{749dbe62-c774-447f-b364-bf82ca8de283}</ProjectGuid>
+    <RailsProject>True</RailsProject>
+    <RailsActionView>
+      <Include>ActionView::Helpers::ActiveRecordHelper</Include>
+      <Include>ActionView::Helpers::AssetTagHelper</Include>
+      <Include>ActionView::Helpers::DateHelper</Include>
+      <Include>ActionView::Helpers::FormHelper</Include>
+      <Include>ActionView::Helpers::FormOptionsHelper</Include>
+      <Include>ActionView::Helpers::FormTagHelper</Include>
+      <Include>ActionView::Helpers::JavaScriptHelper</Include>
+      <Include>ActionView::Helpers::NumberHelper</Include>
+      <Include>ActionView::Helpers::PaginationHelper</Include>
+      <Include>ActionView::Helpers::TagHelper</Include>
+      <Include>ActionView::Helpers::UrlHelper</Include>
+    </RailsActionView>
+    <RailsDebugScript>C:\ProgramData\SapphireSteel Software\Ruby In Steel 2010\Scripts\webrick_service.rb</RailsDebugScript>
+    <RubyInterpreter>C:\RailsInstaller\Ruby1.9.3\bin\ruby.exe</RubyInterpreter>
+    <RubyType>Ruby 1.9.3</RubyType>
+    <ServerPort>3000</ServerPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app\assets\images\rails.png" />
+    <Content Include="app\assets\javascripts\application.js" />
+    <Content Include="app\assets\javascripts\categories.js.coffee" />
+    <Content Include="app\assets\javascripts\customers.js.coffee" />
+    <Content Include="app\assets\javascripts\customer_demographics.js.coffee" />
+    <Content Include="app\assets\javascripts\employees.js.coffee" />
+    <Content Include="app\assets\javascripts\orders.js.coffee" />
+    <Content Include="app\assets\javascripts\order_details.js.coffee" />
+    <Content Include="app\assets\javascripts\products.js.coffee" />
+    <Content Include="app\assets\javascripts\regions.js.coffee" />
+    <Content Include="app\assets\javascripts\shippers.js.coffee" />
+    <Content Include="app\assets\javascripts\store.js.coffee" />
+    <Content Include="app\assets\javascripts\stores.js.coffee" />
+    <Content Include="app\assets\javascripts\suppliers.js.coffee" />
+    <Content Include="app\assets\javascripts\territories.js.coffee" />
+    <Content Include="app\assets\javascripts\usstates.js.coffee" />
+    <Content Include="app\assets\stylesheets\application.css" />
+    <Content Include="app\assets\stylesheets\categories.css.scss" />
+    <Content Include="app\assets\stylesheets\customers.css.scss" />
+    <Content Include="app\assets\stylesheets\customer_demographics.css.scss" />
+    <Content Include="app\assets\stylesheets\employees.css.scss" />
+    <Content Include="app\assets\stylesheets\orders.css.scss" />
+    <Content Include="app\assets\stylesheets\order_details.css.scss" />
+    <Content Include="app\assets\stylesheets\products.css.scss" />
+    <Content Include="app\assets\stylesheets\regions.css.scss" />
+    <Content Include="app\assets\stylesheets\scaffolds.css.scss" />
+    <Content Include="app\assets\stylesheets\shippers.css.scss" />
+    <Content Include="app\assets\stylesheets\store.css.scss" />
+    <Content Include="app\assets\stylesheets\stores.css.scss" />
+    <Content Include="app\assets\stylesheets\suppliers.css.scss" />
+    <Content Include="app\assets\stylesheets\territories.css.scss" />
+    <Content Include="app\assets\stylesheets\usstates.css.scss" />
+    <Content Include="app\controllers\application_controller.rb" />
+    <Content Include="app\controllers\categories_controller.rb" />
+    <Content Include="app\controllers\customers_controller.rb" />
+    <Content Include="app\controllers\customer_demographics_controller.rb" />
+    <Content Include="app\controllers\employees_controller.rb" />
+    <Content Include="app\controllers\orders_controller.rb" />
+    <Content Include="app\controllers\order_details_controller.rb" />
+    <Content Include="app\controllers\products_controller.rb" />
+    <Content Include="app\controllers\regions_controller.rb" />
+    <Content Include="app\controllers\shippers_controller.rb" />
+    <Content Include="app\controllers\stores_controller.rb" />
+    <Content Include="app\controllers\store_controller.rb" />
+    <Content Include="app\controllers\suppliers_controller.rb" />
+    <Content Include="app\controllers\territories_controller.rb" />
+    <Content Include="app\controllers\usstates_controller.rb" />
+    <Content Include="app\helpers\application_helper.rb" />
+    <Content Include="app\helpers\categories_helper.rb" />
+    <Content Include="app\helpers\customers_helper.rb" />
+    <Content Include="app\helpers\customer_demographics_helper.rb" />
+    <Content Include="app\helpers\employees_helper.rb" />
+    <Content Include="app\helpers\orders_helper.rb" />
+    <Content Include="app\helpers\order_details_helper.rb" />
+    <Content Include="app\helpers\products_helper.rb" />
+    <Content Include="app\helpers\regions_helper.rb" />
+    <Content Include="app\helpers\shippers_helper.rb" />
+    <Content Include="app\helpers\stores_helper.rb" />
+    <Content Include="app\helpers\store_helper.rb" />
+    <Content Include="app\helpers\suppliers_helper.rb" />
+    <Content Include="app\helpers\territories_helper.rb" />
+    <Content Include="app\helpers\usstates_helper.rb" />
+    <Content Include="app\models\category.rb" />
+    <Content Include="app\models\customer.rb" />
+    <Content Include="app\models\customer_demographic.rb" />
+    <Content Include="app\models\employee.rb" />
+    <Content Include="app\models\order.rb" />
+    <Content Include="app\models\order_detail.rb" />
+    <Content Include="app\models\product.rb" />
+    <Content Include="app\models\region.rb" />
+    <Content Include="app\models\shipper.rb" />
+    <Content Include="app\models\store.rb" />
+    <Content Include="app\models\supplier.rb" />
+    <Content Include="app\models\territory.rb" />
+    <Content Include="app\models\usstate.rb" />
+    <Content Include="app\views\categories\edit.html.erb" />
+    <Content Include="app\views\categories\index.html.erb" />
+    <Content Include="app\views\categories\new.html.erb" />
+    <Content Include="app\views\categories\show.html.erb" />
+    <Content Include="app\views\categories\_form.html.erb" />
+    <Content Include="app\views\customers\edit.html.erb" />
+    <Content Include="app\views\customers\index.html.erb" />
+    <Content Include="app\views\customers\new.html.erb" />
+    <Content Include="app\views\customers\show.html.erb" />
+    <Content Include="app\views\customers\_form.html.erb" />
+    <Content Include="app\views\customer_demographics\edit.html.erb" />
+    <Content Include="app\views\customer_demographics\index.html.erb" />
+    <Content Include="app\views\customer_demographics\new.html.erb" />
+    <Content Include="app\views\customer_demographics\show.html.erb" />
+    <Content Include="app\views\customer_demographics\_form.html.erb" />
+    <Content Include="app\views\employees\edit.html.erb" />
+    <Content Include="app\views\employees\index.html.erb" />
+    <Content Include="app\views\employees\new.html.erb" />
+    <Content Include="app\views\employees\show.html.erb" />
+    <Content Include="app\views\employees\_form.html.erb" />
+    <Content Include="app\views\layouts\application.html.erb" />
+    <Content Include="app\views\orders\edit.html.erb" />
+    <Content Include="app\views\orders\index.html.erb" />
+    <Content Include="app\views\orders\new.html.erb" />
+    <Content Include="app\views\orders\show.html.erb" />
+    <Content Include="app\views\orders\_form.html.erb" />
+    <Content Include="app\views\order_details\edit.html.erb" />
+    <Content Include="app\views\order_details\index.html.erb" />
+    <Content Include="app\views\order_details\new.html.erb" />
+    <Content Include="app\views\order_details\show.html.erb" />
+    <Content Include="app\views\order_details\_form.html.erb" />
+    <Content Include="app\views\products\edit.html.erb" />
+    <Content Include="app\views\products\index.html.erb" />
+    <Content Include="app\views\products\new.html.erb" />
+    <Content Include="app\views\products\show.html.erb" />
+    <Content Include="app\views\products\_form.html.erb" />
+    <Content Include="app\views\regions\edit.html.erb" />
+    <Content Include="app\views\regions\index.html.erb" />
+    <Content Include="app\views\regions\new.html.erb" />
+    <Content Include="app\views\regions\show.html.erb" />
+    <Content Include="app\views\regions\_form.html.erb" />
+    <Content Include="app\views\shippers\edit.html.erb" />
+    <Content Include="app\views\shippers\index.html.erb" />
+    <Content Include="app\views\shippers\new.html.erb" />
+    <Content Include="app\views\shippers\show.html.erb" />
+    <Content Include="app\views\shippers\_form.html.erb" />
+    <Content Include="app\views\stores\edit.html.erb" />
+    <Content Include="app\views\stores\index.html.erb" />
+    <Content Include="app\views\stores\new.html.erb" />
+    <Content Include="app\views\stores\show.html.erb" />
+    <Content Include="app\views\stores\_form.html.erb" />
+    <Content Include="app\views\store\index.html.erb" />
+    <Content Include="app\views\store\search.html.erb" />
+    <Content Include="app\views\store\show.html.erb" />
+    <Content Include="app\views\store\subordinates.html.erb" />
+    <Content Include="app\views\suppliers\edit.html.erb" />
+    <Content Include="app\views\suppliers\index.html.erb" />
+    <Content Include="app\views\suppliers\new.html.erb" />
+    <Content Include="app\views\suppliers\show.html.erb" />
+    <Content Include="app\views\suppliers\_form.html.erb" />
+    <Content Include="app\views\territories\edit.html.erb" />
+    <Content Include="app\views\territories\index.html.erb" />
+    <Content Include="app\views\territories\new.html.erb" />
+    <Content Include="app\views\territories\show.html.erb" />
+    <Content Include="app\views\territories\_form.html.erb" />
+    <Content Include="app\views\usstates\edit.html.erb" />
+    <Content Include="app\views\usstates\index.html.erb" />
+    <Content Include="app\views\usstates\new.html.erb" />
+    <Content Include="app\views\usstates\show.html.erb" />
+    <Content Include="app\views\usstates\_form.html.erb" />
+    <Content Include="config.ru" />
+    <Content Include="config\application.rb" />
+    <Content Include="config\boot.rb" />
+    <Content Include="config\database.yml" />
+    <Content Include="config\environment.rb" />
+    <Content Include="config\environments\development.rb" />
+    <Content Include="config\environments\production.rb" />
+    <Content Include="config\environments\test.rb" />
+    <Content Include="config\initializers\backtrace_silencers.rb" />
+    <Content Include="config\initializers\inflections.rb" />
+    <Content Include="config\initializers\mime_types.rb" />
+    <Content Include="config\initializers\secret_token.rb" />
+    <Content Include="config\initializers\session_store.rb" />
+    <Content Include="config\initializers\wrap_parameters.rb" />
+    <Content Include="config\locales\en.yml" />
+    <Content Include="config\routes.rb" />
+    <Content Include="db\migrate\20130606215226_create_stores.rb" />
+    <Content Include="db\migrate\20130606215914_add_store_id_to_product.rb" />
+    <Content Include="db\schema.rb" />
+    <Content Include="db\seeds.rb" />
+    <Content Include="destroy_scaffolds" />
+    <Content Include="doc\README_FOR_APP" />
+    <Content Include="Gemfile" />
+    <Content Include="Gemfile.lock" />
+    <Content Include="generate_scaffolds" />
+    <Content Include="performance\correlated.sql" />
+    <Content Include="performance\correlated_rails.rb" />
+    <Content Include="performance\join.sql" />
+    <Content Include="performance\join_rails.rb" />
+    <Content Include="public\404.html" />
+    <Content Include="public\422.html" />
+    <Content Include="public\500.html" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\robots.txt" />
+    <Content Include="Rakefile" />
+    <Content Include="README.rdoc" />
+    <Content Include="script\rails" />
+    <Content Include="test\fixtures\searches.yml" />
+    <Content Include="test\unit\search_test.rb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\assets\" />
+    <Folder Include="app\assets\images\" />
+    <Folder Include="app\assets\javascripts\" />
+    <Folder Include="app\assets\stylesheets\" />
+    <Folder Include="app\controllers\" />
+    <Folder Include="app\helpers\" />
+    <Folder Include="app\mailers\" />
+    <Folder Include="app\models\" />
+    <Folder Include="app\views\" />
+    <Folder Include="app\views\categories\" />
+    <Folder Include="app\views\customers\" />
+    <Folder Include="app\views\customer_demographics\" />
+    <Folder Include="app\views\employees\" />
+    <Folder Include="app\views\layouts\" />
+    <Folder Include="app\views\orders\" />
+    <Folder Include="app\views\order_details\" />
+    <Folder Include="app\views\products\" />
+    <Folder Include="app\views\regions\" />
+    <Folder Include="app\views\shippers\" />
+    <Folder Include="app\views\stores\" />
+    <Folder Include="app\views\store\" />
+    <Folder Include="app\views\suppliers\" />
+    <Folder Include="app\views\territories\" />
+    <Folder Include="app\views\usstates\" />
+    <Folder Include="config\" />
+    <Folder Include="config\environments\" />
+    <Folder Include="config\initializers\" />
+    <Folder Include="config\locales\" />
+    <Folder Include="db\" />
+    <Folder Include="db\migrate\" />
+    <Folder Include="doc\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\assets\" />
+    <Folder Include="lib\tasks\" />
+    <Folder Include="log\" />
+    <Folder Include="performance\" />
+    <Folder Include="public\" />
+    <Folder Include="script\" />
+    <Folder Include="test\" />
+    <Folder Include="test\fixtures\" />
+    <Folder Include="test\unit\" />
+    <Folder Include="vendor\" />
+    <Folder Include="vendor\assets\" />
+    <Folder Include="vendor\assets\javascripts\" />
+    <Folder Include="vendor\assets\stylesheets\" />
+    <Folder Include="vendor\plugins\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SapphireSteel Software\Ruby In Steel 2010\RubyInSteel.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

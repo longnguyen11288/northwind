@@ -6,6 +6,9 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'tiny_tds'
+gem 'activerecord-odbc-adapter'
+gem 'activerecord-sqlserver-adapter'
 gem 'composite_primary_keys'
 
 # Gems used only for assets and not required
