@@ -35,7 +35,11 @@ test:
   azure: true
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
+  adapter: sqlserver
+  mode: dblib
+  dataserver: EYAzureDemo
+  database: northwind
+  username: jrb_dba@m5cyheu7ul
+  password: Ch1ck3nnu883t5
   timeout: 5000
+  azure: true
